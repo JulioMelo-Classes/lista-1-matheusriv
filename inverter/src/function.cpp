@@ -1,6 +1,7 @@
-#include "function.h"
+#include <array>
 
 #include <iterator>
+
 using std::iter_swap;
 
 /*! 
@@ -11,4 +12,11 @@ template <size_t SIZE>
 void reverse( std::array< std::string, SIZE > & arr )
 {
     /*codigo*/
+
+    size_t tamanho = arr . size();
+
+    for(int start=0, end=tamanho-1; start<end; start++,end--){
+        swap(arr[start], arr[end]);
+    }
+
 }
