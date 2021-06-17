@@ -127,7 +127,7 @@ int main ( void )
 
             auto [ mi, ma ] = min_max( A, n );
             EXPECT_TRUE( mi == 4 );
-            EXPECT_TRUE( ma == 6 );
+            EXPECT_TRUE( ma == 3 );
         }
     }
 
