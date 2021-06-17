@@ -15,7 +15,31 @@ using std::setprecision;
 
 int main(void)
 {
-    // TODO: Adicione aqui a sua solução.
+    int x;
+    float count=0, countRange[] = {0,0,0,0,0};
+
+    while(cin >> std::ws >> x){
+        count++;
+        if(x>=0 && x<25){
+            countRange[0]++;
+        }
+        else if(x>=25 && x<50){
+            countRange[1]++;
+        }
+        else if(x>=50 && x<75){
+            countRange[2]++;
+        }
+        else if(x>=75 && x<100){
+            countRange[3]++;
+        }
+        else{
+            countRange[4]++;
+        }
+    } 
+
+    for(int i=0; i<5; i++){
+        cout << std::setprecision(4) << (countRange[i] * 100)/count << endl;
+    }
 
     return 0;
 }
