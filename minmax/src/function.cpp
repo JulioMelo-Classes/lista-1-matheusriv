@@ -15,6 +15,7 @@ std::pair<int,int> min_max( int V[], int n )
     // TODO: Adicione aqui sua solução.
 
     int equal=0, max, min;
+
     max = V[0];
     min = V[0];
 
@@ -31,6 +32,7 @@ std::pair<int,int> min_max( int V[], int n )
         equal=1;
     else
         equal=0;
+
 
     if(n==0){
         return { -1, -1 };
@@ -64,7 +66,8 @@ std::pair<int,int> min_max( int V[], int n )
                 break; 
             }
         }
-        return { min, max };
     }
+    
+    return { min, max };
 
 }
