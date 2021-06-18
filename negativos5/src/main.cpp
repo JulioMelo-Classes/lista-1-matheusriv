@@ -8,11 +8,11 @@ int main(void)
 {
     // TODO: Adicione aqui seu código.
 
-    int countNegative=0, arr[SIZE];
+    int countNegative=0, x;
 
     for(int i=0; i<SIZE; i++){ 
-        cin >> arr[i];
-        if(arr[i]<0)
+        cin >> x;
+        if(x<0)
             countNegative++;
     }
 
