@@ -4,6 +4,9 @@
  * Verifica se um ponto está dentro de um retângulo.
  */
 
+/*
+ok
+*/
 location_t pt_in_rect( const Ponto &IE, const Ponto &SD, const Ponto &P )
 {
     // TODO: Coloque aqui seu código.

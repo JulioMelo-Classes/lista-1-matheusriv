@@ -7,6 +7,9 @@
 
 using namespace std;
 
+/*
+ok
+*/
 int main( void )
 {
     // TODO: Adicione seu código aqui. 
